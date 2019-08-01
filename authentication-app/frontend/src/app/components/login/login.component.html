@@ -1,0 +1,25 @@
+<div class="container register-form">
+    <div class="form mt-4">
+        <div class="note">
+            <p>Sign In</p>
+        </div>
+        <form class="form-content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email *" value="" name="email" [(ngModel)] = "user.email"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Your Password *" value="" name="password" [(ngModel)] = "user.password"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group text-center mb-0">
+                <input type="submit" class="btnSubmit" (click)="validateLogin()" value="Login">
+                <a class="nav-link" routerLink="/register">Register</a>
+            </div>
+        </form>
+    </div>
+</div>
